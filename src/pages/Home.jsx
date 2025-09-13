@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { cn } from "@/lib/utils.js";
-import { Button } from "@/components/ui/button.jsx";
+import { cn } from "../lib/utils.js";
+import { Button } from "../components/ui/button.jsx";
 import { Github, Linkedin, Mail, ArrowRight, PanelsTopLeft, Users2, MessageSquareCode, ChevronLeft, ChevronRight, Code2, Trophy } from "lucide-react";
-import { useScrollReveal } from "@/hooks/useScrollReveal.js";
+import { useScrollReveal } from "../hooks/useScrollReveal.js";
 
 const logoSrc = (name) => {
   const map = {

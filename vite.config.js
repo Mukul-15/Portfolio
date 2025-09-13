@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     fs: {
-      allow: ["./", "./client"],
+      allow: ["./", "./src"],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**"],
     },
   },
@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(process.cwd(), "./client"),
+      "@": path.resolve(process.cwd(), "./src"),
     },
     extensions: ['.js', '.jsx', '.json'],
   },
