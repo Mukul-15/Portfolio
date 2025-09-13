@@ -2,29 +2,14 @@
   "name": "fusion-starter",
   "private": true,
   "type": "module",
-  "pkg": {
-    "assets": [
-      "dist/spa/*"
-    ],
-    "scripts": [
-      "dist/server/**/*.js"
-    ]
-  },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build",
-    "build:server": "vite build --config vite.config.server.js",
-    "start": "node dist/server/node-build.mjs",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "vitest --run",
-    "format.fix": "prettier --write .",
-    "vercel-build": "npm run build:client"
+    "format.fix": "prettier --write ."
   },
-  "dependencies": {
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "zod": "^3.25.76"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@hookform/resolvers": "^5.2.1",
     "@radix-ui/react-accordion": "^1.2.11",
