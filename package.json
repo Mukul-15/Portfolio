@@ -17,7 +17,8 @@
     "build:server": "vite build --config vite.config.server.js",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
-    "format.fix": "prettier --write ."
+    "format.fix": "prettier --write .",
+    "vercel-build": "npm run build:client"
   },
   "dependencies": {
     "dotenv": "^17.2.1",
